@@ -1,0 +1,60 @@
+<!--/********************************************************************
+
+    pragm text renderer replaces html contenteditable
+    Copyright (C) 2014  Dustin Robert Hoffner
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    
+******************************************************************** */-->
+
+<html>
+
+<head>
+    
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+</head>
+
+<body>
+<div>OpenKIX Renderer by Dustin Hoffner Detectbox: <span class="dhr-b"><span class="dhr-r">TEST</span></span><span id="detectbox" class="bold" contenteditable="true">,</span> </div><br>
+    
+<div class="contentbox">
+    <div id="line1"></div>
+    
+    </div>   
+<div class="developerbox">
+    Dev Info:<br>
+    Absolute Width: <input type="button" onclick="document.getElementById('showdete').innerHTML = document.getElementById('detectbox').offsetWidth;" value="getwidth"><span id="showdete"></span><br>
+    Mouse-Position: <span id="mouseposition"></span><br>
+    onresize: <span id="onresize"></span><br>
+    <input type="button" onclick="pragmDev.renderbox();" value="render"> Rendertime:  ms <br>
+    <input type="button" onclick="pragmDev.renderboxOld();" value="renderOld"><br>
+    <input type="button" onclick="pragmDev.renderboxNew();" value="renderVeryNew"><br>
+    <div contenteditable="true" id="inserttext">Das ist ein Test</div><br>
+    <div>RenderTIME Split: <br>
+        1 - <span id="re1"></span> ms<br>
+        2 - <span id="re2"></span> ms<br>
+        3 - <span id="re3"></span> ms<br>
+        4 - <span id="re4"></span> ms<br>
+        5 - <span id="re5"></span> ms<br>
+        6 - <span id="rendertime"></span> ms<br>
+    </div>
+    </div>   
+<div class="caret" id="caret">
+    </div>
+</body>
+
+</html>

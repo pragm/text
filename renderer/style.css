@@ -1,0 +1,107 @@
+/********************************************************************
+
+    pragm text renderer replaces html contenteditable
+    Copyright (C) 2014  Dustin Robert Hoffner
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    
+******************************************************************** */
+
+.contentbox {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 800px;
+    min-height: 1000px;
+    background: #f1f1f1;
+    overflow: hidden;
+    outline: none;
+    letter-spacing: 0px;
+    border: 0px solid black;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    -webkit-user-select: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-kerning: none;
+    font-stretch: normal;
+    font-size-adjust: none;
+    font-style: normal;
+    font-variant: normal;
+    font-synthesis: none;
+    font-feature-settings: normal;
+    text-align: left;
+    display: block;
+    letter-spacing: 0px;
+    text-rendering: optimizeSpeed;
+}
+.contentbox span{
+    background: rgba(255, 0, 0, 0.17);
+}
+.developerbox {
+    position: fixed;
+    top: 40px;
+    left: 880px;
+    width: 300px;
+    height: 500px;
+    background: #003650;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    padding: 10px;
+}
+.caret {
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    background: #000000;
+}
+#detectbox {
+    background: rgba(255, 0, 0, 0.17);
+    overflow: hidden;
+    outline: none;
+    letter-spacing: 0px;
+    border: 0px solid black;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-kerning: none;
+    font-stretch: normal;
+    font-size-adjust: none;
+    font-style: normal;
+    font-variant: normal;
+    font-synthesis: none;
+    font-feature-settings: normal;
+    text-align: left;
+    letter-spacing: 0px;
+    text-rendering: optimizeSpeed;
+}
+.dhr-b{
+    font-weight: bold !important;
+}
+.dhr-r{
+    font-size: 24px !important;
+}
+.none{
+    
+}
+.dh{
+    min-width: 1px;   
+}
+
+#line1 {
+}
